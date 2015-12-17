@@ -13,9 +13,8 @@ int numPairsWithDifference(vector<int> &nums, int K) {
 
     for (int i=0; i < nums.size(); i++) {
         count += hash.count(nums[i] + K);
-        count += hash.count(nums[i] - K);
     }
-    return count / 2;
+    return count;
 }
 
 int main() {
